@@ -6,11 +6,13 @@
   <title>PROTOFOLIO - Muhamad Fajru</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar">
+  <nav class="navbar" data-aos="fade-down">
     <div class="logo">
       <img src="Logo.png" alt="Website Logo" />
     </div>
@@ -25,19 +27,16 @@
   <!-- Hero Section -->
   <section class="hero" id="home">
     <img src="bg.JPG" alt="Background" class="background-image" />
-    <div class="intro">
+    <div class="intro" data-aos="fade-up">
       <h1>Hi, I am <span class="highlight">Muhamad Fajru</span></h1>
       <p>A journey of learning and creativity in multimedia</p>
     </div>
   </section>
 
-</body>
-</html>
-
   <!-- About Section -->
-<section id="about">
+  <section id="about">
     <div class="about-section">
-      <div class="about-container">
+      <div class="about-container" data-aos="fade-up">
         <div class="about-image">
           <img src="AboutMe.png" alt="Foto Aju" />
         </div>
@@ -58,62 +57,61 @@
     </div>
   </section> 
 
-<!-- Portfolio Section -->
-<section id="portfolio" class="portfolio-section">
-  <img src="bg.JPG" alt="Background" class="background-image" />
-  <div class="portfolio-content">
-    <h2 class="portfolio-title">PORTFOLIO</h2>
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio-section">
+    <img src="bg.JPG" alt="Background" class="background-image" />
+    <div class="portfolio-content" data-aos="fade-up">
+      <h2 class="portfolio-title">PORTFOLIO</h2>
+      <button class="portfolio-button">PHOTOGRAPHY</button>
+      <div class="portfolio-gallery">
+        <div class="image-box"><img src="photo1.jpg" alt="Photo 1" /></div>
+        <div class="image-box"><img src="photo2.jpg" alt="Photo 2" /></div>
+        <div class="image-box"><img src="photo3.jpg" alt="Photo 3" /></div>
+        <div class="image-box"><img src="photo4.jpg" alt="Photo 4" /></div>
+        <div class="image-box"><img src="photo5.jpg" alt="Photo 5" /></div>
+        <div class="image-box"><img src="photo6.jpg" alt="Photo 6" /></div>
+        <div class="image-box"><img src="photo7.png" alt="Photo 7" /></div>
+        <div class="image-box"><img src="photo8.png" alt="Photo 8" /></div>
+      </div>
 
-    <button class="portfolio-button">PHOTOGRAPHY</button>
-
-    <div class="portfolio-gallery">
-      <div class="image-box"><img src="photo1.jpg" alt="Photo 1" /></div>
-      <div class="image-box"><img src="photo2.jpg" alt="Photo 2" /></div>
-      <div class="image-box"><img src="photo3.jpg" alt="Photo 3" /></div>
-      <div class="image-box"><img src="photo4.JPG" alt="Photo 4" /></div>
-      <div class="image-box"><img src="photo5.jpg" alt="Photo 5" /></div>
-      <div class="image-box"><img src="photo6.jpg" alt="Photo 6" /></div>
-      <div class="image-box"><img src="photo7.png" alt="Photo 7" /></div>
-      <div class="image-box"><img src="photo8.png" alt="Photo 8" /></div>
+      <button class="portfolio-button">PROJECTS</button>
+      <div class="project-container">
+        <a href="https://www.instagram.com/ppbs_upi" target="_blank" class="project-card">
+          <img src="Project 1.png" alt="Instagram" />
+          <p><strong>Instagram Feeds Design</strong></p>
+        </a>
+        <a href="https://heyzine.com/flip-book/bd060f9308.html" target="_blank" class="project-card">
+          <img src="Project 2.png" alt="Storytelling Book" />
+          <p><strong>Storytelling Book</strong></p>
+        </a>
+        <a href="https://www.instagram.com/reel/C2ZozJxrSMy" target="_blank" class="project-card">
+          <img src="Project 3.png" alt="Content" />
+          <p><strong>Content</strong></p>
+        </a>
+      </div>
     </div>
+  </section>
 
-    
-    <button class="portfolio-button">PROJECTS</button>
-
-    <div class="project-container">
-      <a href="https://www.instagram.com/ppbs_upi" target="_blank" class="project-card">
-        <img src="Project 1.png" alt="Instagram" />
-        <p><strong>Instagram Feeds Design</strong></p>
-      </a>
-      <a href="https://heyzine.com/flip-book/bd060f9308.html" target="_blank" class="project-card">
-        <img src="Project 2.png" alt="Storytelling Book" />
-        <p><strong>Storytelling Book</strong></p>
-      </a>
-      <a href="https://www.instagram.com/reel/C2ZozJxrSMy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="project-card">
-        <img src="Project 3.png" alt="Content" />
-        <p><strong>Content</strong></p>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section class="contact" id="contact">
-    <div class="contact-content">
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-content" data-aos="fade-up">
       <h2 class="contact-title">CONTACT</h2>
       <div class="contact-icons">
-        <a href="https://www.instagram.com/fajrujuu" target="_blank" class="contact-icon" aria-label="Instagram">
+        <a href="https://www.instagram.com/fajrujuu" target="_blank" class="contact-icon">
           <img src="Instagram.png" alt="Instagram" />
         </a>
-        <a href="https://wa.me/6285314685640" target="_blank" class="contact-icon" aria-label="WhatsApp">
+        <a href="https://wa.me/6285314685640" target="_blank" class="contact-icon">
           <img src="WA.png" alt="WhatsApp" />
         </a>
-        <a href="mailto:fajrugifari24@gmail.com" class="contact-icon" aria-label="Email">
+        <a href="mailto:fajrugifari24@gmail.com" class="contact-icon">
           <img src="Email.png" alt="Email" />
         </a>
       </div>
     </div>
   </section> 
-  
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
