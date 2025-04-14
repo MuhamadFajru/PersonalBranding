@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PORTFOLIO - Muhamad Fajru</title>
+  <title>PROTOFOLIO - Muhamad Fajru</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </head>
 <body>
 
@@ -25,20 +30,23 @@
   <!-- Hero Section -->
   <section class="hero" id="home">
     <img src="bg.JPG" alt="Background" class="background-image" />
-    <div class="intro">
+    <div class="intro" data-aos="fade-up">
       <h1>Hi, I am <span class="highlight">Muhamad Fajru</span></h1>
       <p>A journey of learning and creativity in multimedia</p>
     </div>
   </section>
 
+</body>
+</html>
+
   <!-- About Section -->
-  <section id="about">
+<section id="about">
     <div class="about-section">
-      <div class="about-container">
+      <div class="about-container" data-aos="fade-up">
         <div class="about-image">
           <img src="AboutMe.png" alt="Foto Aju" />
         </div>
-        <div class="about-text">
+        <div class="about-text"> 
           <h3>Muhamad Fajru Rohman Al-Gifari</h3>
           <p>
             I am a 4th-semester Multimedia Education student at the Indonesian University of Education 
@@ -55,47 +63,48 @@
     </div>
   </section> 
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="portfolio-section">
-    <img src="bg.JPG" alt="Background" class="background-image" />
-    <div class="portfolio-content">
-      <h2 class="portfolio-title">PORTFOLIO</h2>
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio-section">
+  <img src="bg.JPG" alt="Background" class="background-image" />
+  <div class="portfolio-content">
+    <h2 class="portfolio-title">PORTFOLIO</h2>
 
-      <button class="portfolio-button">PHOTOGRAPHY</button>
+    <button class="portfolio-button">PHOTOGRAPHY</button>
 
-      <div class="portfolio-gallery">
-        <div class="image-box"><img src="photo1.jpg" alt="Photo 1" /></div>
-        <div class="image-box"><img src="photo2.jpg" alt="Photo 2" /></div>
-        <div class="image-box"><img src="photo3.jpg" alt="Photo 3" /></div>
-        <div class="image-box"><img src="photo4.JPG" alt="Photo 4" /></div>
-        <div class="image-box"><img src="photo5.jpg" alt="Photo 5" /></div>
-        <div class="image-box"><img src="photo6.jpg" alt="Photo 6" /></div>
-        <div class="image-box"><img src="photo7.png" alt="Photo 7" /></div>
-        <div class="image-box"><img src="photo8.png" alt="Photo 8" /></div>
-      </div>
-
-      <button class="portfolio-button">PROJECTS</button>
-
-      <div class="project-container">
-        <a href="https://www.instagram.com/ppbs_upi" target="_blank" class="project-card">
-          <img src="Project 1.png" alt="Instagram" />
-          <p><strong>Instagram Feeds Design</strong></p>
-        </a>
-        <a href="https://heyzine.com/flip-book/bd060f9308.html" target="_blank" class="project-card">
-          <img src="Project 2.png" alt="Storytelling Book" />
-          <p><strong>Storytelling Book</strong></p>
-        </a>
-        <a href="https://www.instagram.com/reel/C2ZozJxrSMy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="project-card">
-          <img src="Project 3.png" alt="Content" />
-          <p><strong>Content</strong></p>
-        </a>
-      </div>
+    <div class="portfolio-gallery" data-aos="fade-right">
+      <div class="image-box"><img src="photo1.jpg" alt="Photo 1" /></div>
+      <div class="image-box"><img src="photo2.jpg" alt="Photo 2" /></div>
+      <div class="image-box"><img src="photo3.jpg" alt="Photo 3" /></div>
+      <div class="image-box"><img src="photo4.jpg" alt="Photo 4" /></div>
+      <div class="image-box"><img src="photo5.jpg" alt="Photo 5" /></div>
+      <div class="image-box"><img src="photo6.jpg" alt="Photo 6" /></div>
+      <div class="image-box"><img src="photo7.png" alt="Photo 7" /></div>
+      <div class="image-box"><img src="photo8.png" alt="Photo 8" /></div>
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <div class="contact-content">
+    
+    <button class="portfolio-button">PROJECTS</button>
+
+    <div class="project-container" data-aos="fade-left">
+      <a href="https://www.instagram.com/ppbs_upi" target="_blank" class="project-card">
+        <img src="Project 1.png" alt="Instagram" />
+        <p><strong>Instagram Feeds Design</strong></p>
+      </a>
+      <a href="https://heyzine.com/flip-book/bd060f9308.html" target="_blank" class="project-card">
+        <img src="Project 2.png" alt="Storytelling Book" />
+        <p><strong>Storytelling Book</strong></p>
+      </a>
+      <a href="https://www.instagram.com/reel/C2ZozJxrSMy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="project-card">
+        <img src="Project 3.png" alt="Content" />
+        <p><strong>Content</strong></p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="contact-content" data-aos="fade-up">
       <h2 class="contact-title">CONTACT</h2>
       <div class="contact-icons">
         <a href="https://www.instagram.com/fajrujuu" target="_blank" class="contact-icon" aria-label="Instagram">
@@ -109,6 +118,10 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
