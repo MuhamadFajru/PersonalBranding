@@ -288,6 +288,9 @@ body {
   color: #ffd670;
   text-align: center;
 }
+a {
+  text-decoration: none;
+}
 
 /* Contact Section */
 .contact {
@@ -383,7 +386,7 @@ body {
   .project-card img {
     height: auto;
   }
-
+  
   /* Contact Icon */
   .contact-icons {
     flex-wrap: wrap;
@@ -421,5 +424,19 @@ body {
       padding: 0;
     }
   }
-  
-  
+  /* Ubah durasi animasi AOS */
+[data-aos] {
+  transition-duration: 1s; /* default: 400ms */
+  transition-timing-function: ease-in-out;
+}
+
+/* Contoh modifikasi tambahan */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
